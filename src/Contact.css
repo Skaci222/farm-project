@@ -1,0 +1,31 @@
+.contact-title{
+    margin-top: 50px;
+    font-family: 'Inter Tight';
+}
+
+.contact-info{
+    margin-top: 20px;
+    font-family: 'Inter Tight';
+}
+
+.contact-textarea{
+    margin-top: 20px;
+    font-family: 'Inter Tight';
+    width: 20%;
+    height: 30%
+}
+
+.contact-button{
+    margin-top: 20px;
+    font-family: 'Inter Tight';
+    background-color: #FFA500;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}

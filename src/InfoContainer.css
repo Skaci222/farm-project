@@ -1,0 +1,25 @@
+
+.info-container{
+    text-align: center;
+    display: flex;
+    flex: 1;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Inter Tight';
+}
+
+.info-title{
+    margin-top: 130px;
+    font-size: 3em;
+    text-decoration:overline;
+    
+}
+
+.info-description{
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: bold;
+
+}

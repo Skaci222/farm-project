@@ -1,0 +1,43 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    font-family: 'Inter Tight';    
+
+}
+
+.title{
+    font-size: 4em;
+}
+
+.logo{
+    width: 170px;
+    height: auto;
+    border-radius: 700px;
+    margin: 10px;
+}
+
+nav{
+    margin-left: auto;
+    margin-right: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+nav a:hover{
+    font-weight: bold;
+}

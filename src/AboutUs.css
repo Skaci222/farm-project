@@ -1,0 +1,65 @@
+
+.about-us-container{
+font-family: 'Inter Tight';
+display: flex;
+    
+}
+
+.goats{
+    width: 500px;
+    height: auto;
+    float: left;
+    margin-left: 300px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: -2px 0px 10px  rgb(0, 0, 0);
+
+}
+
+.about-us-info{
+    width: 500px;
+    border: solid 1px rgba(0, 0, 0, 0.516);
+    border-radius: 5px;
+    border-style:ridge;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px; 
+    box-shadow: -2px 0px 10px  rgb(0, 0, 0);
+    background-color: rgb(242, 242, 237);   
+
+}
+
+.about-us-title{
+    font-size: 2em;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 70px;
+    
+    
+}
+
+.about-us-desc{
+    font-size: 1em;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 20px;
+    
+}
+
+.rates{
+    font-size: 1.5em;
+    margin-top: 60px;
+    margin-left: 30px;
+    text-decoration: underline;
+    
+}
+
+.price-desc{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 1em;
+    
+}
+
