@@ -1,6 +1,8 @@
 import {useState} from 'react';
+import { useLocation } from 'react-router-dom';
 import {ArrowBigLeft, ArrowBigRight, Circle, CircleDot} from 'lucide-react';
 import './ImageSlider.css';
+import {motion as m} from 'framer-motion';
 
 function ImageSlider({slides}){
 
@@ -22,31 +24,25 @@ function ImageSlider({slides}){
 
     return ( 
 
-    <div style={{backgroundColor: "beige", overflow: 'hidden'}}> 
-
-    <div style={{ width: "35%",height: "90%",margin: "0 auto",display: "flex",position: "relative"
+    <div style={{backgroundColor: "beige", height:'130%'}}>
+    <m.div initial={{opacity: 0}} animate={{opacity: 1}}>
+    <div className='img-title-container'>
+    <h1 className='img-slider-title'>Photo Gallery</h1>
+    </div>
+    </m.div>
+    <m.div initial={{opacity: 0}} animate={{opacity: 1}} style={{width: "40%",height: "70%", margin: "0 auto", position: "relative"
     }}> 
-    <div className='slider' style={{width: "100%",height: "100%",overflow: "hidden", display: "flex"}}>
+    <div className='slider' style={{width: "100%",height: "100%",overflow: "hidden", display: "flex", marginTop: "50px"}}>
         {slides.map(slide => (
             <img key={slide} src={slide} className='image-slider-img' style={{translate: `${-100 * currentIndex}%`}}/>
         ))}
-         <button className='button-slider' style={{left:0}} onClick={handleLeftClick}><ArrowBigLeft/></button>
-        <button className='button-slider' style={{right:0}} onClick={handleRightClick}><ArrowBigRight/></button>
+         <button className='button-slider' style={{left:-88}} onClick={handleLeftClick}><ArrowBigLeft/></button>
+        <button className='button-slider' style={{right:-88}} onClick={handleRightClick}><ArrowBigRight/></button>
     </div>
-    <div style={{
-        position: "absolute",
-        bottom: "0.5rem",
-        left: "50%",
-        translate: "-50%",
-        display: "flex",
-        gap: "0.25rem",
-    }}>
-        {slides.map((_, index) => (
-            <button key={index} className='img-slider-dot-btn' onClick={() => 
-                setCurrentIndex(index)}>{index === currentIndex ? <CircleDot/> : <Circle/>}</button>))}
+    </m.div>
     </div>
-    </div>
-    </div>
+    
+
     
     );
 }

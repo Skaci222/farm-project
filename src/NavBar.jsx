@@ -21,10 +21,9 @@ const NavBar = () => {
     return(
        <div className="navbar" style={{backgroundColor: navColor}}>
         <img className='logo' src={Logo} alt='logo'/>
-        <h1 className='title'></h1>
         <nav>
             <NavLink to = "">Home</NavLink>
-            <NavLink to= "/about">Visit Us</NavLink>
+            <NavLink to= "/about">About Us</NavLink>
             <NavLink to="/photos">Photos</NavLink> 
             <NavLink to="/contact">Contact</NavLink>
         </nav>

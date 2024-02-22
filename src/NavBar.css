@@ -1,19 +1,13 @@
 .navbar{
     display: flex;
-    align-items: center;
-    font-family: 'Inter Tight';    
 
-}
-
-.title{
-    font-size: 4em;
 }
 
 .logo{
-    width: 170px;
+    width: 250px;
     height: auto;
     border-radius: 700px;
-    margin: 10px;
+    margin: 20px;
 }
 
 nav{
@@ -28,14 +22,16 @@ nav{
 
 }
 
+
 nav a{
     margin: 0 10px;
     text-decoration: none;
     color: white;
     font-weight: normal;
-    background-color: black;
+    background-color: rgb(162, 2, 2);
     border-radius: 5px;
     padding: 5px 15px;
+    box-shadow: 0 0 5px black;
 }
 
 nav a:hover{
