@@ -1,81 +1,72 @@
-.contact-info-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.contact-container{
+    background-color: #FAF9F6;
+    height: 100vh;
+    
 }
 
 .contact-title-container{
     text-align: center;
 }
 
+.main-container{
+    display: flex;
+}
 
-.contact-title{
+.description-container{
     display: inline-block;
-    background-color: white;
-    padding: 40px;
-    font-size: 5em;
-    border-radius: 10px;
-    color: rgb(94, 93, 93);
-    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.461);
+    width: 45%;
+    margin: 70px 100px 100px 100px;
+    background-color: black;
+    
 }
 
 .contact-info{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 1.5em;
+    margin: 70px 0px 0px 100px;
+    font-size: 4.5em;
+    font-weight: bold;
     text-align: center;
-}
-
-.title-email{
-
-}
-
-.contact-email{
-    margin-top: 5px;
-    width: 500px;
-    height: 40px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-}
-
-.title-name{
-
-}
-
-.contact-name{
- margin-top: 5px;
- width: 500px;
- height: 40px;
- margin-bottom: 30px;
- border-radius: 5px;
-}
-
-.title-message{
-
-}
-
-.contact-message{
-    margin-top: 5px;
-    width: 500px;
-    height: 200px;
-    border-radius: 5px;
-}
-
-.contact-button{
-    margin-top: 20px;
-    background-color: #FFA500;
     color: white;
-    border-radius: 5px;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 200px;
-    margin-right: 200px;
 }
+
+.contact-info2{
+    margin: 50px 0px 70px 100px;
+    font-size: 2.8em;
+    text-align: center;
+    color: white;
+}
+
+.links-container{
+    margin: 200px 0px 0px 10px;
+    width: 60%;
+    
+
+}
+
+.contact-link{
+    margin: 50px 0px 0px 30px;
+    border: 1px solid black;
+}
+
+
+.phone-number{
+    text-align: start;
+    margin-right: 220px;
+    font-size: 3em;
+}
+
+.email{
+    text-align: start;
+    margin-right: 130px;
+    font-size: 3em;
+}
+
+.email:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+

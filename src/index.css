@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter Tight';
+  font-family: 'Lato';
 
 }
 
@@ -12,7 +12,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: beige;
+  background-color: #FAFDF3;
   background: url('./assets/cows.jpg') no-repeat center center/cover;
 
 }

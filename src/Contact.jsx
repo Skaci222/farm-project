@@ -1,54 +1,41 @@
 import './Contact.css'
 import React, { useRef } from 'react';
+import horses from "./assets/three-horses.jpg"
+import babycow from "./assets/baby-cow-2.jpg"
 import emailjs from '@emailjs/browser';
 import {motion as m} from 'framer-motion';
+import { Link } from "@react-email/components"
 
 
-const contactMessage = ["We would love to hear from you! " , <br/>, 
-"For any questions or to book a visit, call 613-362-9967 or send us a mesage below."];
+const contactMessage = "We would love to hear from you!";
+const contactMessage2 = "Get in touch to reserve a farm visit or special event.";
 
 function Contact() {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm('service_7gzh3jr', 'template_rf5m3r8', form.current, {
-        publicKey: 'iuiodCFprMhwKFL4E',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
+  
+  const Email = () => {
+    return <Link href="https://www.gmail.com">Example</Link>;
   };
 
   return (
-    <div  style={{backgroundColor: 'beige'
-    }}>
+      <div className='contact-container'>
       <m.div initial={{opacity: 0}} animate={{opacity: 1}} className='contact-info-container'>
-        <div className='contact-title-container'>
-      <h1 className="contact-title">Contact Us</h1>
-      </div>
+      <div className='main-container'>
+      <div className='description-container'>
       <p className="contact-info">{contactMessage}</p>
-      <div style={{}}>
-      <form ref={form} onSubmit={sendEmail} style={{display: 'flex', 
-      flexDirection: 'column'}}>
-      <h3 className='title-name'>Name</h3>
-      <input className='contact-name' type='text' name='user_name'/>
-      <h3 className='title-email'>Email</h3>
-      <input className='contact-email'type='email' name='user_email'/>
-      <h3 className='title-message'>Message</h3>
-      <textarea className="contact-message" name='message'></textarea>
-      <input className="contact-button" type='Submit' value='Send'></input>
-      </form>
+      <p className='contact-info2'>{contactMessage2}</p>
+      </div>
+      <div className='links-container'>
+      <div className='contact-link'>
+        <p className='phone-number'><strong>Call Or Text: </strong><a href="tel:519-569-9151">(613)362-9967</a></p>
+        <p className='email'><strong>Email: </strong><a href="mailto:info@sola">info@solagratiafarm.com</a></p>
+        </div>
+      </div>
+      <div>
+      </div>
       </div>
       </m.div>
-    </div>
+      </div>
+    
   )
 }
 export default Contact

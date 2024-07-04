@@ -1,0 +1,106 @@
+.about-us-container{
+    display: flex;
+    align-items: center;
+    background-color: #FAF9F6;
+    margin-bottom: 100px;
+    
+}
+.about-us-title{
+    display: inline-block;
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: white;
+    color: rgb(94, 93, 93);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(167, 166, 166);
+
+}
+
+.pic-and-rates{
+    display: flex;
+    justify-content: center;
+}
+
+.chicken{
+    width: 400px;
+    height: auto;
+    float: left;
+    margin: 50px 0px 100px 150px;
+    border-radius: 5px;
+    box-shadow: -1px 0px 5px  rgb(0, 0, 0);
+}
+
+.about-us-info-container{
+    display:flex;
+    flex-direction: column;  
+    align-items: center;
+    
+   
+}
+
+.visit-us-intro{
+    display: inline-block;
+    font-size: 3em;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.about-us-desc{
+    font-size: 1.5em;
+    text-align: justify;
+    width: 80%;
+    text-align: center;
+}
+
+.reserve-button{
+    margin-top: 35px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(162, 2, 2);
+    border-radius: 5px;
+    padding: 20px;
+    border: none;
+    box-shadow: 0 0 2px black;
+    font-size: 1.5em;
+    
+}
+
+.reserve-button:hover{
+    cursor: pointer;
+    color: rgb(162, 2, 2);
+    background-color: #f1ba15;
+}
+
+.playing-pic{
+     margin: 220px 150px 0px 0px;
+     width: 400px;
+     height: auto;
+     border-radius: 5px;
+     box-shadow: -1px 0px 5px  rgb(0, 0, 0);
+}
+.rates-price{
+    margin-top: 0px;
+}
+
+ul{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.rates{
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+li{
+    margin-top: 20px;
+}
+

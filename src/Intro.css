@@ -1,0 +1,70 @@
+
+.about-container{
+    background-color: #FAF9F6;
+
+    
+}
+
+
+.bio-and-pic{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.goat-pic{
+    width: 500px;
+    height: auto;
+    float: left;
+    margin: 100px 120px 0px 100px;
+    border-radius: 5px;
+    box-shadow: -1px 0px 5px  rgb(0, 0, 0);
+}
+
+p{
+    font-size: 1.5em;
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+    width: 75%;
+    
+}
+
+.intro{
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.bio-description{
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.bio-pics{
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.donkey-pic{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 100px;;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    box-shadow: -1px 0px 5px  rgb(0, 0, 0);
+}
+
+.cow-bottle{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    box-shadow: -1px 0px 5px  rgb(0, 0, 0);
+}

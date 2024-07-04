@@ -1,0 +1,8 @@
+.app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFDF3;
+    background: url('./assets/cows.jpg') no-repeat center center/cover;
+}

@@ -1,10 +1,31 @@
 .navbar{
     display: flex;
+    width: 100%;
+    
+}
+.navbar.transparent{
+    background-color: transparent;
+}
 
+.navbar.gradient{
+    background-image: linear-gradient(#EED7C5, #FAF9F6);
+}
+
+.navbar-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    margin-right: 50px;
 }
 
 .logo{
-    width: 250px;
+    width: 180px;
     height: auto;
     border-radius: 700px;
     margin: 20px;
@@ -15,9 +36,7 @@ nav{
     margin-right: 50px;
     font-size: 1.5em;
     font-weight: bold;
-    display: flex;
     align-items: center;
-    justify-content: center;
     gap: 20px;
 
 }

@@ -1,5 +1,5 @@
 import Logo from './assets/farm-pic-sg.jpg'
-import InfoContainer from './InfoContainer';
+import Welcome from './Welcome';
 import './NavBar.css'
 import { NavLink, useLocation } from 'react-router-dom'
 import React, {useState} from 'react'
@@ -9,25 +9,29 @@ const NavBar = () => {
 
     const [navColor, setNavColor] = useState('');
     const location = useLocation();
-    React.useEffect(() => {
+   /* React.useEffect(() => {
         if(location.pathname === "/"){
             setNavColor('transparent');
         } else {
-            setNavColor('rgba(247, 236, 197)');
+            setNavColor('#FAF9F6');
         }
-    }, [location]);
+    }, [location]);*/
+    const isHomePage = location.pathname === "/";
     
 
     return(
-       <div className="navbar" style={{backgroundColor: navColor}}>
+       <nav className={isHomePage ? 'navbar transparent' : 'navbar gradient'}>
+        <div className='navbar-container'>
         <img className='logo' src={Logo} alt='logo'/>
-        <nav>
-            <NavLink to = "">Home</NavLink>
-            <NavLink to= "/about">About Us</NavLink>
-            <NavLink to="/photos">Photos</NavLink> 
+        <div className='nav-links'>
+        <NavLink to = "">Home</NavLink>
+            <NavLink to= "/visit">Visit Us</NavLink>
+            <NavLink to="/events">Special Events</NavLink> 
             <NavLink to="/contact">Contact</NavLink>
+            </div>
+        </div>
         </nav>
-       </div>
+       
     );
 
 }
